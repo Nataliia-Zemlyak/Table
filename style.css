@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.table-result table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+.table-result h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #bfbfbf;
+    font-weight: bold;
+}
+.table-result th {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #2a3644;
+    border: 1px solid #3f4852;
+} 
+.table-result td {
+    font-size: 16px;
+    color: #2a3644;
+    border: 1px solid #c0c1c2;
+    border-bottom: 0;
+    border-left: 0;
+    
+    
+}
+.info td:first-child {
+    text-align: center;
+}
+td { 
+    padding: 12px 15px;
+}
+thead th {
+    padding: 15px;
+}
+.num {
+    text-align: right;
+}
+
+tbody tr  {
+    background-color: #f2f2f2;
+}
+tbody tr:hover {
+    background-color: #c0c1c2;
+
+}
+.table-result tr:nth-child(2n+1) {
+    background-color: #e8e8e8;
+}
+
+.table-result tr:first-child th:nth-child(2) {
+    text-align: left;
+}
+.table-result tr:first-child th:first-child {
+    width: 43px;
+}
+.info td:nth-child(n+3) {
+text-align: right;
+}
+.table-style {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.table-style h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #bfbfbf;
+    font-weight: bold;
+}
+.table-line {
+    display:flex;
+    justify-content: space-between;
+}
+.table-line p {
+    display: table-cell;
+}
+.table-line h3 {
+    font-size: 16px;
+color: #ffffff;
+font-weight: bold;
+font-family: "Arial"
+}
+.title {
+    background-color: #2a3644;
+}
+.table-info {
+    font-size: 16px;
+    color: #2a3644;
+    font-family: "Arial";
+    background-color: #f2f2f2;
+    border: 1px solid #c0c1c2;
+}
+.table-style {
+    border-radius: 3px;
+}
