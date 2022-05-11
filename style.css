@@ -76,8 +76,36 @@ h2 {
     display: block;
 
 }
-.sub2 > ul > li >a {
-
+.social a {
+    display: block;
+    background: url(../img/sprite.png) no-repeat;
+}
+a.fb {
+    width: 9px;
+    height: 18px;
+    background-position: -5px 5;
+}
+a.fb:hover {
+    background-position: -4px -26px;
+}
+a.tw {
+    width: 16px;
+    height: 14px;
+    background-position: -14px 5px;
+}
+a.tw:hover{
+    background-position: -35px -27px;
+}
+a.in {
+    width: 14px;
+    height: 16px;
+    background-position: -18px 5px;
+}
+a.in:hover {
+    background-position: -18px -26px;
+}
+.menu {
+    
 }
 
 
