@@ -41,18 +41,10 @@ h2 {
 }
 .product li:hover .sub-menu,
 .tehnic li:hover .sub-menu,
-.tehnic li:hover .sub-menu2,
-.tehnic li:hover .sub-menu3,
 .menu li:hover .sub-menu {
     display: block;
     list-style: none;
     
-}
-.sub-menu2 {
-    display: none;
-}
-.tehnic li:hover .sub-menu {
-    padding-left: 30px;
 }
 .sub-menu {
     margin-top: 0;
@@ -60,16 +52,33 @@ h2 {
     padding-top: 5px;
     display: none;
     position: absolute;
-    border-radius: 20px;
 }
 .sub-menu a {
     color: #2a3644;
     background-color: #d2d4d5;
-    border: 1px solid #b9bdc1;
-    border-right: 0;
-    border-left: 0;
+    
 } 
+.sub-menu > li:first-child>a {
+    border-radius: 3px 3px 0 0;
+}
+.sub-menu>li:last-child>a {
+    border-radius: 0 0 3px 3px;
+}
+.sub-menu>li:nth-child(n+2)>a {
+    border-top: 1px solid #b9bdc1;
+}
+.sub2,
+.sub3 {
+    display: none;
+    position: absolute;
+}
+.sub2:hover {
+    display: block;
 
+}
+.sub2 > ul > li >a {
+
+}
 
 
 
@@ -79,6 +88,7 @@ h2 {
     width: 100%;
     border-collapse: collapse;
     border-radius: 3px;
+    overflow: hidden;
 }
 
 .table-result th {
@@ -107,7 +117,7 @@ td {
     padding: 12px 15px;
 }
 thead th {
-    padding: 15px;
+    padding: 12px;
 }
 .num {
     text-align: right;
@@ -150,6 +160,9 @@ text-align: right;
 width: 100%;
 display: table;
 margin-bottom: 60px;
+border-collapse: collapse;
+border-radius: 3px;
+overflow: hidden;
 
 }
 
