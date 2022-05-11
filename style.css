@@ -27,13 +27,11 @@ h2 {
     font-size: 16px;
     color: #fff;
     font-weight: bold;
-    border: 1px solid #3f4852;
-    border-top: 0;
-    border-bottom: 0;
-    
     padding: 12.5px 30px;
     display: block;
 }
+   
+
 .product a:hover,
 .tehnic a:hover,
 .menu a:hover {
@@ -70,12 +68,7 @@ h2 {
     border: 1px solid #b9bdc1;
     border-right: 0;
     border-left: 0;
-}
-
-
-
-
-
+} 
 
 
 
@@ -98,12 +91,15 @@ h2 {
 .table-result td {
     font-size: 16px;
     color: #2a3644;
-    border: 1px solid #c0c1c2;
-    border-bottom: 0;
-    border-left: 0;
-    
     
 }
+.table-result td:nth-child(n+2) {
+    border-left: 1px solid #c0c1c2;
+}
+tbody tr:nth-child(n+2) {
+    border-top:  1px solid #c0c1c2;
+}
+
 .info td:first-child {
     text-align: center;
 }
@@ -127,12 +123,20 @@ tbody tr:hover {
     border-right: 0;
 
 }
+.table-result tr:nth-child(2n+1):hover {
+    background-color: #c0c1c2;
+    border-left: 0; 
+    border-right: 0;
+}
+
 .table-result tr:nth-child(2n+1) {
     background-color: #f2f2f2;
 }
 
 .table-result tr:first-child th:nth-child(2) {
     text-align: left;
+    width: 50.5%;
+    padding-left: 16px;
 }
 .table-result tr:first-child th:first-child {
     width: 43px;
@@ -145,7 +149,7 @@ text-align: right;
 .title-style {
 width: 100%;
 display: table;
-margin-bottom: 20px;
+margin-bottom: 60px;
 
 }
 
@@ -158,6 +162,10 @@ margin-bottom: 20px;
 }
 .table-line p {
     display: table-cell;
+    border-top: 1px solid #c0c1c2;
+}
+.table-line p:nth-child(n+2) {
+    border-left: 1px solid #c0c1c2;  
 }
 .table-line h3 {
     font-size: 16px;
@@ -173,7 +181,6 @@ font-family: "Arial"
     color: #2a3644;
     font-family: "Arial";
     background-color: #f2f2f2;
-    border: 1px solid #c0c1c2;
 }
 
 .title h3 {
@@ -182,10 +189,11 @@ font-family: "Arial"
 .table-info p {
     padding: 12px 12px;
 }
-.table-line h3,
-.table-line p {
-    border: 0.5px solid #c0c1c2;
+.table-line h3 {
+    border: 1px solid #3f4852;
 }
+
+
 .table-line h3:first-child {
     width: 43px;
     text-align: center;
