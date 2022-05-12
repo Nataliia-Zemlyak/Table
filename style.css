@@ -125,9 +125,9 @@ ul {
 }
 
 
+
 .menu {
     display: flex;
-    justify-content: space-between;
     background: #2a3644;
     list-style: none;
 }
@@ -142,19 +142,19 @@ ul {
 }
 .menu > li > a {
     border-left: 1px solid #3f4751;
-    border-right: 1px solid #3f4751;
+    
 }
-.menu li:last-child > a {
-    border-right: 0;
-}
-.menu li:first-child > a {
+
+.menu  li:first-child > a {
     border-left: 0;
 }
+
 .social {
     display: flex;
     align-items: center;
-    
+    padding-left: 20%;
 }
+
 .social li {
     list-style: none;
 }
