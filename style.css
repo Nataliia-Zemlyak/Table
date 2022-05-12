@@ -60,8 +60,7 @@ ul {
 }
 
 .tehnic {  
-    display: flex;
-    justify-content: space-between;
+    
     background: #2a3644;
 }
 .tehnic > li > a {
