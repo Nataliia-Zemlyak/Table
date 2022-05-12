@@ -60,7 +60,9 @@ ul {
 }
 
 .tehnic {  
-  background: #2a3644;
+    display: flex;
+    justify-content: space-between;
+    background: #2a3644;
 }
 .tehnic > li > a {
     border-left: 1px solid #3f4751;
