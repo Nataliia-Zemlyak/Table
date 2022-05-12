@@ -13,6 +13,9 @@ h2 {
     color: #bfbfbf;
     font-weight: bold;
 }
+ul {
+    padding: 0;
+}
 
 .product {
     padding-left: 0;
@@ -20,6 +23,23 @@ h2 {
     justify-content: space-between;
     list-style: none;
     background: #2a3644;
+}
+.product > li > a {
+    border-left: 1px solid #3f4751;
+    border-right: 1px solid #3f4751;
+}
+.product li:last-child > a {
+    border-right: 0;
+}
+.product li:first-child > a {
+    border-left: 0;
+}
+
+
+.product,
+.tehnic,
+.menu {
+    border-radius: 3px;
 }
 
 .product a,
@@ -31,10 +51,26 @@ h2 {
     padding: 12.5px 30px;
     display: block;
 }
+.tehnic > li > a {
+    text-align: 
+}
 
-.tehnic {
-    
-    background: #2a3644;
+.menu > li > a {
+    padding: 12.5px 30px;
+}
+
+.tehnic {  
+  background: #2a3644;
+}
+.tehnic > li > a {
+    border-left: 1px solid #3f4751;
+    border-right: 1px solid #3f4751;
+}
+.tehnic li:last-child > a {
+    border-right: 0;
+}
+.tehnic li:first-child > a {
+    border-left: 0;
 }
 
 .tehnic > li {
@@ -46,9 +82,10 @@ h2 {
 .tehnic a:hover,
 .menu a:hover {
     color: #fd8612;
-    background-color:  #2a3644;
+    background-color: #2a3644;
     
 }
+
 .product li:hover .sub-menu,
 .tehnic li:hover .sub-menu,
 .menu li:hover .sub-menu {
@@ -65,11 +102,19 @@ h2 {
     position: absolute;
 }
 .sub-menu a {
+    display: block;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: bolt;
+    text-decoration: none;
     color: #2a3644;
     background-color: #d2d4d5;
     
 } 
-.sub-menu > li:first-child>a {
+.left {
+    left: 69%;
+}
+.sub-menu > li:first-child > a {
     border-radius: 3px 3px 0 0;
 }
 .sub-menu>li:last-child>a {
@@ -78,42 +123,45 @@ h2 {
 .sub-menu>li:nth-child(n+2)>a {
     border-top: 1px solid #b9bdc1;
 }
-.sub2,
-.sub3 {
-    display: none;
-    position: absolute;
-}
-.sub2:hover {
-    display: block;
-    
-}
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
+
+
 .menu {
-    width: 100%;
-    padding: 12.5px;
     display: flex;
     justify-content: space-between;
     background: #2a3644;
     list-style: none;
 }
+
 .menu a {
-    font-size: 16px;
     color: #fff;
+    display: block;
+    font-size: 16px;
     font-weight: bold;
     list-style: none;
     text-decoration: none;
 }
+.menu > li > a {
+    border-left: 1px solid #3f4751;
+    border-right: 1px solid #3f4751;
+}
+.menu li:last-child > a {
+    border-right: 0;
+}
+.menu li:first-child > a {
+    border-left: 0;
+}
 .social {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    
+}
+.social li {
+    list-style: none;
 }
 
 .social a {
-    padding-right: 30px;
-    display: block;
+    margin-left: 11px;
+    margin-right: 20px;
     background: url(../img/sprite.png) no-repeat;
 }
 a.fb {
