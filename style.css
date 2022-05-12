@@ -48,7 +48,7 @@ ul {
     font-size: 16px;
     color: #fff;
     font-weight: bold;
-    padding: 12.5px 30px;
+    padding: 12.5px 42px;
     display: block;
 }
 .tehnic > li > a {
@@ -66,7 +66,7 @@ ul {
 }
 .tehnic > li > a {
     border-left: 1px solid #3f4751;
-    border-right: 1px solid #3f4751;
+    
 }
 .tehnic li:last-child > a {
     border-right: 0;
