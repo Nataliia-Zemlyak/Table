@@ -6,23 +6,24 @@ body {
     margin: 0 auto;
     max-width: 960px;
 }
+
 h2 {
     font-size: 24px;
     letter-spacing: 1px;
     color: #bfbfbf;
     font-weight: bold;
 }
-.product,
-.tehnic,
-.menu {
+
+.product {
+    padding-left: 0;
     display: flex;
     justify-content: space-between;
     list-style: none;
     background: #2a3644;
 }
+
 .product a,
-.tehnic a,
-.menu a{
+.tehnic a {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
@@ -30,14 +31,23 @@ h2 {
     padding: 12.5px 30px;
     display: block;
 }
-   
+
+.tehnic {
+    
+    background: #2a3644;
+}
+
+.tehnic > li {
+    display: table-cell;
+}
+
 
 .product a:hover,
 .tehnic a:hover,
 .menu a:hover {
     color: #fd8612;
     background-color:  #2a3644;
-
+    
 }
 .product li:hover .sub-menu,
 .tehnic li:hover .sub-menu,
@@ -47,6 +57,7 @@ h2 {
     
 }
 .sub-menu {
+    width: 200px;
     margin-top: 0;
     padding-left: 0;
     padding-top: 5px;
@@ -74,16 +85,41 @@ h2 {
 }
 .sub2:hover {
     display: block;
-
+    
 }
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    width: 100%;
+    padding: 12.5px;
+    display: flex;
+    justify-content: space-between;
+    background: #2a3644;
+    list-style: none;
+}
+.menu a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
 .social a {
+    padding-right: 30px;
     display: block;
     background: url(../img/sprite.png) no-repeat;
 }
 a.fb {
     width: 9px;
     height: 18px;
-    background-position: -5px 5;
+    background-position: -5px -5px;
 }
 a.fb:hover {
     background-position: -4px -26px;
@@ -91,7 +127,7 @@ a.fb:hover {
 a.tw {
     width: 16px;
     height: 14px;
-    background-position: -14px 5px;
+    background-position: -34px -5px;
 }
 a.tw:hover{
     background-position: -35px -27px;
@@ -99,14 +135,12 @@ a.tw:hover{
 a.in {
     width: 14px;
     height: 16px;
-    background-position: -18px 5px;
+    background-position: -18px -5px;
 }
 a.in:hover {
     background-position: -18px -26px;
 }
-.menu {
-    
-}
+
 
 
 
