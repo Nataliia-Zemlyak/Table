@@ -16,6 +16,10 @@ h2 {
 ul {
     padding: 0;
 }
+.navigation {
+    position: relative;
+}
+
 
 
 .product {
@@ -52,16 +56,15 @@ ul {
     padding: 12.5px 42px;
     display: block;
 }
-.tehnic > li > a {
-    text-align: 
-}
+
 
 .menu > li > a {
     padding: 12.5px 30px;
 }
 
 .tehnic {  
-    
+    width: 100%;
+    display: table;
     background: #2a3644;
 }
 .tehnic > li > a {
@@ -79,12 +82,41 @@ ul {
     display: table-cell;
 }
 
+.menu {
+    display: flex;
+    background: #2a3644;
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.home:before {
+    content: '';
+   
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -55px -5px;
+}
+.menu > li > a {
+    border-left: 1px solid #3f4751;
+    
+}
+
+.menu  li:first-child > a {
+    border-left: 0;
+}
 
 .product a:hover,
 .tehnic a:hover,
 .menu a:hover {
     color: #fd8612;
-    background-color: #2a3644;
     
 }
 
@@ -93,7 +125,7 @@ ul {
 .menu li:hover .sub-menu {
     display: block;
     list-style: none;
-    
+    background-color: #2a3644;
 }
 .sub-menu {
     width: 200px;
@@ -113,8 +145,9 @@ ul {
     background-color: #d2d4d5;
     
 } 
-.left {
-    left: 67%;
+
+.right {
+    right: 0;
 }
 .sub-menu > li:first-child > a {
     border-radius: 3px 3px 0 0;
@@ -126,30 +159,6 @@ ul {
     border-top: 1px solid #b9bdc1;
 }
 
-
-
-.menu {
-    display: flex;
-    background: #2a3644;
-    list-style: none;
-}
-
-.menu a {
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    list-style: none;
-    text-decoration: none;
-}
-.menu > li > a {
-    border-left: 1px solid #3f4751;
-    
-}
-
-.menu  li:first-child > a {
-    border-left: 0;
-}
 
 .social {
     display: flex;
