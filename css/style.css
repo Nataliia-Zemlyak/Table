@@ -126,12 +126,21 @@ li.home > a {
     border-left: 0;
 }
 
-.product a:hover,
-.tehnic a:hover,
-.menu a:hover {
+.tehnic li:hover > a,
+.product li:hover > a,
+.menu li:hover > a {
     color: #fd8612;
     background-color: #3f4852;
-    
+}
+.tehnic a:hover,
+.product a:hover,
+.menu a:hover {
+    color: #fd8612;
+}
+.tehnic li:hover,
+.product li:hover,
+.menu li:hover {
+    color: #fd8612;
 }
 
 .product li:hover .sub-menu,
@@ -140,9 +149,7 @@ li.home > a {
     display: block;
     list-style: none;
 }
-.sub-menu li > a:hover {
-    background-color: #2a3644;
-}
+
 .sub-menu {
     width: 200px;
     margin-top: 0;
@@ -171,6 +178,7 @@ li.home > a {
 .sub-menu>li:last-child>a {
     border-radius: 0 0 3px 3px;
 }
+
 .sub-menu>li:nth-child(n+2)>a {
     border-top: 1px solid #b9bdc1;
 }
