@@ -162,9 +162,8 @@ li.home > a {
     color: #fd8612;
 }
 
-.product li:hover .sub-menu,
-.tehnic li:hover .sub-menu,
-.menu li:hover .sub-menu {
+.product li:hover > .sub-menu,
+.tehnic li:hover > .sub-menu {
     display: block;
     list-style: none;
 }
@@ -190,16 +189,64 @@ li.home > a {
 .sub-menu a:hover {
     background-color: #2a3644;
 }
-.sub2 {
-    left:103%;
-    top:49%
-}
-
+.sub2,
 .sub3{
-    left: -103%;
-    top: 73%;
+    display: none;
     
 }
+.pr {
+    position: relative;
+}
+
+.sub-menu li:hover .sub2 {
+    display: block;
+    left: 100%;
+    top: 0;
+    
+}
+.sub2 li:hover .sub3 {
+    display: block;
+    right: 100%;
+    top:0;
+
+}
+.sub2 {
+    padding-left: 5px;
+    padding-top: 1px;
+}
+.sub3 {
+    padding-right: 5px;
+    padding-top: 1px;
+}
+.menu li:hover .sub-menu {
+    display: block;
+    list-style: none;
+}
+
+.sub4 {
+    width: 440px;
+    background-color: #d2d4d5;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu .sub4 a {
+    width: 179px;
+    border: 0;
+    border-bottom: 1px solid #b9bdc1;
+    border-right: 1px solid #b9bdc1;
+    padding: 13px 19.5px;
+}
+.sub4 li:first-child a {
+    border: 0;
+    border-right: 1px solid #b9bdc1;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+
+
+
 
 .right {
     right: 0;
